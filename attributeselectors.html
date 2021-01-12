@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* header h2 {
+             color: aqua;
+         } */
+
+        /* ul > li {
+             background-color: blue;
+         } */
+
+        /* ol > li {
+background-color: chartreuse;
+         } */
+
+        /* body li {
+             background-color: crimson;
+         } */
+
+        /* div + p {
+  background-color: yellow;
+}
+
+p ~ ul {
+  background: #ff0000;
+}  */
+
+        * {
+            background-color: lightseagreen;
+        }
+
+        ul li {
+            background-color: rgb(60, 210, 30);
+        }
+
+        span {
+            background-color: crimson;
+        }
+
+
+        /* section ul li{
+    background-color: darkblue;
+} 
+
+        div ul>li #one {
+            background-color: deeppink;
+        }
+
+
+        section.one {
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        header.head {
+            background-color: deepskyblue;
+        }
+
+        section .sports {
+            background-color: gold;
+        }
+
+
+        section #paragraph {
+            text-decoration: underline;
+            color: greenyellow;
+            background-color: indigo;
+        }
+
+
+        header,
+        section,
+        article {
+            font-size: 30px;
+            border: solid 3px red;
+        }*/
+
+        /* [href]{
+    background-color: black;
+}
+
+[href="https://github.com/"]{
+    background-color: chartreuse;
+} 
+
+a[href~="com"]{
+    background-color: crimson;
+}
+
+a[href^="#"] {
+  background-color: gold;
+} */
+
+        a[href$=".com"] {
+            background-color: rgba(221, 19, 29, 0.904);
+        }
+
+
+        /* header[class="heading"] {
+            background-color: black;
+            color: chartreuse;
+        } */
+
+        header[class] {
+            color: whitesmoke;
+        }
+
+        a[href] {
+            font-size: 40px;
+            background-color: yellow;
+        }
+
+header[class^="head"]{
+    background-color: darkviolet;
+
+    
+}
+
+header[class$="one"]{
+
+}
+
+
+        [class$="head"]{
+            background-color: rgb(0, 60, 139);
+        }
+
+        [class~="sect"]{
+background-color: rgb(219, 206, 17);
+        }
+[id="one"]{
+    background-color: forestgreen;
+}
+
+
+
+header,div,section {
+    border: rgb(251, 255, 0) solid 5px;
+}
+
+[id~="one"]{
+    font-size: 40px;
+}
+
+input,textarea{
+    background-color: crimson;
+}
+
+/* input::placeholder{
+    color: chartreuse;
+} */
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Types of Selectors
+    1.Type/Element Selector
+    2. Class Selectors syntax: .classname {properties}
+    3. Id Selectors
+    4. Attribute Selector
+    5. Universal Selectors
+
+
+whenever we use class of an element write element.classname
+we cannot use element.classname for the same element
+element .classname descendant with class selector
+element element  descendant selector
+
+    Combinators 
+
+    Child Selector symbol >
+    syntax: Parent element > Direct child 
+
+
+Descendent Selector symbol space 
+syntax: Parent element targrtedelement 
+
+General Sibling Selector/combinator 
+syntax former element ~ targeted element {CSS}
+
+whenever the targeted element comes after the former element 
+The CSS properties is applied to targeted element.
+all the targeted elements which comes after or is preceded by former element. 
+
+
+
+
+Adjacent Sibling Selector/combinator
+
+
+
+Whenever there is similar specificity between element styles. The latest or the last one CSS style would get applied to the elements-->
+
+<!-- 
+Targeting elements by their attribute only.
+[attribute] Selector
+
+Targeting elements by their attribute and exact value.
+[attribute="value"] Selector
+
+Targeting elements by their attribute and exact word (might be separated by white-space).
+[attribute~="value"] Selector
+
+Targeting elements by their attribute and exact value (or the value followed by a hyphen).
+[attribute|="value"] Selector
+
+Targeting elements by their attribute and whose value has a prefix of the exact value.
+[attribute^="value"] Selector
+
+Targeting elements by their attribute and whose value has a suffix of the exact value.
+[attribute$="value"] Selector
+
+Targeting elements by their attribute and whose value has the exact value at least once.
+[attribute*="value"] Selector
+
+Adding i or I makes the search case-insensitive.
+Adding s or S makes the search case-sensitive. -->
+
+
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<input type="text" placeholder="Codekul">
+    <header class="head">
+
+        <h1>
+            Heading
+        </h1>
+
+        <h2>Articles Blog</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quisquam sed, quas nulla mollitia excepturi
+            tempore possimus doloribus corporis, soluta vitae ea quidem error. Reprehenderit numquam sunt magnam ducimus
+            quidem.</p>
+
+    </header>
+
+    <header class="HEAD-ing">
+
+        <h1>
+            Heading
+        </h1>
+
+        <h2>Articles Blog</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quisquam sed, quas nulla mollitia excepturi
+            tempore possimus doloribus corporis, soluta vitae ea quidem error. Reprehenderit numquam sunt magnam ducimus
+            quidem.</p>
+
+    </header>
+
+
+    <section class="section-head">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, quis. Quidem reiciendis similique voluptas
+        ducimus ad laborum laudantium earum repellat, nisi, ipsum molestias accusamus corporis illum. Culpa nostrum
+        maxime placeat.</section>
+    <section class="sect-one">
+        <p class="sports">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur accusamus
+            illo rem, sunt ex atque repellendus, soluta provident possimus cumque. Nihil voluptates omnis aperiam libero
+            culpa nostrum optio. Quidem.</p>
+    </section>
+
+    <a href="https://github.com/">Github link</a>
+    <a href="#">Link 1</a>
+    <address class="sect">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam eligendi officiis earum magni pariatur
+        dicta soluta, similique voluptas enim tempore ab aliquam suscipit rem consequuntur cupiditate dolorem quod esse.
+    </address>
+    <p>
+
+    <div>
+        <ul>
+            <li id="section one list">one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+
+    </p>
+
+    <section>
+
+    </section>
+
+
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+
+
+    <section class="one">
+        <p> <span>Paragraph</span> inside header
+
+        </p>
+    </section>
+
+
+    <section class="two">
+        <p>In paragraph of section</p>
+
+        <ul>
+            <li>List inside paragrapg</li>
+            <li>HHJKK</li>
+        </ul>
+
+
+    </section>
+
+    <section>
+        <div id="paragraph">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+    </section>
+
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div>
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+    </div>
+
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+    <p>The first paragraph.</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+</body>
+
+</html>

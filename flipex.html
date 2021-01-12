@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        
+.container:hover .card{
+  transform: rotateY(180deg);
+}
+.front-card, .back-card{
+  position: absolute;
+  backface-visibility: hidden;
+}
+.back-card{
+  background-color: coral;
+  transform: rotateY(180deg);
+}
+.card{
+  height: 300px;
+  width: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  
+}
+
+.container{
+  width: 300px;
+  perspective: 600px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="front-card">
+          <img height="300px" width="300px" src="./images/img4.jpg" alt="" />
+        </div>
+        <div class="back-card">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+          adipisci soluta error facere quas provident accusantium vel.
+          Cupiditate nihil ipsa excepturi officiis porro voluptas ullam ea quia,
+          blanditiis, reiciendis alias?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

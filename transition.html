@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: chartreuse;
+            height: 300px;
+            width: 300px;
+            /* transition-delay: 1.5s;
+            transition-duration: 3s;
+            transition-property: all; */
+
+            /* transition:property name duration delay */
+
+            /* transition: width 3s;
+
+            transition: width 4s ease-in 3s;
+            transition: transform 4s; */
+
+/* Always give property name and duration. If we dont give duration 
+transition properties will not be affected.
+            transition: property-name transition-duration
+
+            transition: property-name transition-duration transition-delay
+
+            transition: property-name transition-duration transition-timing-function
+
+            transition: property-name transition-duration transition-timing-function transition-delay */
+
+
+        }
+
+        /* div:hover{
+            width: 500px;
+            transform: rotate(60deg);
+            perspective: 300px;
+            perspective-origin: left;
+            
+        } */
+img{
+    height: 300px;
+    width:300px
+
+
+}
+
+#one{
+    width:200px;
+    background-color: blueviolet;
+    transition: width 4s 3s ease-in;
+
+    transition-duration: 4s;
+    transition-property: none;
+    transition-delay: 2s;
+    transition-timing-function: ease-out;
+}
+
+
+#one:hover{
+    width: 400px;
+
+    transform: rotateY(180deg);
+}
+
+img:hover{
+    transform: rotate(45deg);
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        One
+    </div>
+
+    <img src="./images/6.jpg" alt="">
+
+
+    <div id="one">One</div>
+</body>
+</html>
