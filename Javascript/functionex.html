@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Types of function in javascript
+        // Named function
+        // Anonymous Function 
+        // Self-Invoking Function 
+        // Constructor Function
+
+
+        function addition() {
+            var a=5;
+            var b=6;
+            var c=a+b;
+            console.log(c);
+
+        }
+
+        addition();
+
+        // Anonymous function is a function which doesnt have a name.Anonymous
+        // Anonymous function is used as a variable function expression.
+
+        // We can declare a variable as a function using function keyword.
+
+        // Function declarations are always hoisted at top.But variable function expression doesnt get hoisted at top
+
+
+
+        
+
+       var mult = function () {             //variable function expression or anonymous function 
+            var j= 5;
+            var k=10;
+            var multiplication = j*k*5;
+
+            document.write(multiplication);
+        }
+
+        mult();
+
+
+        var mult = function (j,k) {             //variable function expression or anonymous function 
+            var multiplication = j*k*5;         //Passing a parameter in function give variables inside rounded brackets
+                                                //Advantage of passing a parameter - we can call a one function multiple 
+                                                //times for diffarent values.
+
+
+            document.write(multiplication);
+        }
+
+        mult(40,2);
+        mult(30, 4);
+
+
+        // Self invoking doesnt need any call or invoking. It invokes itself.
+
+       /* (function division (){
+            var h=10;
+            var i=5;                    //method 1 to write a self invoking function
+            var div=h/i;
+            document.write(div);
+        })(); */
+
+        (function (){
+            var h=10;
+            var i=5;                    //method 2 to write a self invoking function
+            var div=h/i;
+            document.write(div);
+        }());
+
+
+        var substract = new Function ("a", "b", "return a-b;")
+
+        var z = substract(20,5);
+
+        document.write(z);
+
+
+
+    </script>
+</body>
+</html>

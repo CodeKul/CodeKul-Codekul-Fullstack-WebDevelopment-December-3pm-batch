@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="order" type="text">
+
+    <input type="submit" onclick="food()">
+
+    <p id="output"></p>
+    <script>
+        var menu_items =["pizza", "coffee", "milshake", "french_fries"];
+        var orderinput = document.getElementById('order').Value;
+        alert(orderinput);
+
+function food() {
+
+        switch(orderinput) {
+            case  'pizza':{
+                document.write("pizza is selected");
+                document.getElementById("output").innerHTML = "pizza";
+                console.log("pizza");
+            }break;
+
+            case "coffe" : {
+                document.write("cofee is selected");
+                console.log("coffee");
+            }break;
+            case "milkshake" : {
+                document.write("milkshake is selected");
+            }break;
+
+            case "french_fries" : {
+                document.write("french fries is selected");
+            }break;
+
+            // default : {document.write("Food item not in menu list");}
+        }
+    }
+
+    </script>
+</body>
+</html>

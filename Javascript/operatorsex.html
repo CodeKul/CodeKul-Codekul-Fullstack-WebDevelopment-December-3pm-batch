@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    
+    <!-- Arithmatic Operators
+    Logical Operators
+    Bitwise Operators
+    conditional Operators
+    Assignment Operators
+    Comparison/Relational Operations
+
+
+    Arithmatic Operators   +, -, /, %, *  Addition, Substraction, Division, Modulus, Multiplication -->
+
+    <script>
+        var a = "10";
+        var b = 15;
+
+        var add = a + b;
+var sub = a-b;
+var div = a/b;
+var mult = a*b;
+var mod = a%b;
+
+document.writeln(add);
+document.writeln(sub);
+document.writeln(div);
+document.writeln(mult);
+document.writeln(mod);
+
+// a += a;
+// var a = a+a
+// var c= 20;
+// c-=c;
+// var c = c-c;
+// a /=a;
+// a*=a;
+
+// Relational Operators less than, greater than, Equal to, Not equal to;
+
+// equality operator ==  to check whether variable values are equal or not
+// strict equality operator === it checks the value as well as data types of the variable
+
+if (a<b) {
+    document.writeln("a is less than b");
+}
+else if (a>b) {
+    document.writeln("a is greater than b");
+}
+// else if(a==b) {
+//     document.write("a is equal to b");
+//     console.log(a===b);
+ //}
+  else if (a<=b){
+    document.write("a is less than or equal to b");
+}
+else if (a>=b){
+    document.write("a is greater than or equal to b");
+}
+
+
+
+// Logical operators - OR AND NOT 
+
+// OR operator ||
+// AND operator &&
+// Not operator !
+
+// OR operator ||  Even if one statement/variable value is true the output value will be true
+
+// AND operator &&  Both Statement/ varibles value should be true then and then only output value will be true
+
+
+if ((a>b) || (a=10)){
+    document.writeln("Enter the word:");
+}
+else{
+    document.writeln("Exit")
+}
+
+
+
+// AND operator table 
+// true true = true
+// true false = false
+// false true = false
+// false false = false
+
+// OR operator table
+// true true = true
+// true false = true
+// false true = true
+// false false = false
+
+//    increment operator ++ 
+//    pre increment and post increment 
+//    pre increment ++variable     post increment variable++
+
+console.log(a);
+console.log(a++); //11
+console.log(++a);   //12
+
+
+console.log(b);
+console.log(--b);
+console.log(b--);
+console.log(b);
+
+
+// 2 - 0010        0+2+0+0
+// 4 - 0100            0+0+4+0
+//  0101               1+0+4+0 5
+//  1101                   13
+   
+   </script>
+</body>
+
+</html>

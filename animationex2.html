@@ -43,6 +43,14 @@ img{
     animation-delay: 2s;
 }
 
+p + div {
+color: blue;
+}
+
+
+div >img {
+transform: rotateY(180deg);
+}
     </style>
 </head>
 <body>
@@ -73,8 +81,42 @@ animation-iteration-count
 -->
 
 
+
+<div class="parent">
+    <p>one</p>
+    <div class="child">
+        <p>two</p>
+    </div>
+
+    <p>three</p>
+    <img src="./images/6.jpg" alt="">
+    <div>
+        <p>three</p>
+    <div>four</div>
+
+    </div>
+
+    <p>three</p>
+    <div>four</div>
+</div>
+
+a[href ="codekul"] {
+
+}
+
+<a href="http://www.codekul.com"></a>
+<a href="http://www.codekul.org"></a>
+<a href="http://www.codekul.com"></a>
+
+
+
+<input type="text">
     <div class="container">
-        <div class="text">Welcome...!</div>
+        <div class="text">Welcome...!
+            <div class="image"> 
+                <img src="./images/img1.jpg" alt="">
+            </div>
+        </div>
 
         <img src="./images/img4.jpg" alt="">
     </div>
