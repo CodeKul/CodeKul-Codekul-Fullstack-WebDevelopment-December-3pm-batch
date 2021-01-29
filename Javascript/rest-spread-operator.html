@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //rest operatior is used at the function declaration and spread operator at the arguments passing or function call
+        //Always write the rest parameter in the end.
+        // parameters are variables that are passed or listed while function declaration
+        function add(x,...z) {
+            var i;
+            var result;
+            for(i=0; i<=z.length; i++){
+                 x+= z[i];
+            }
+            console.log(x);
+            console.log(z);
+            console.log(z[3])
+            console.log(z.length)
+            console.log(arguments);
+            
+                  
+        }
+
+       // add(12,5);  //function arguments are the values that passed while function call
+
+        add(12,5,6,10,20,30,50);
+
+        var names = ["sanket", "rushi", "siddhi","vaishnavi", "vaibhav"];
+        var updatedNames = ["omkar", ...names];
+
+        add(...names);
+
+
+
+        
+    </script>
+</body>
+</html>
