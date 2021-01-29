@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+   <!-- DOM - Document Object Model
+     -->
+
+     <h1>DOM basics</h1>
+     <p id="pone">DOM is a Document object model.</p>
+     <p id="quotes"></p>
+
+     <label>Enter a number 1</label>
+     <input type="number" id="n1">
+
+     <label>Enter a number 2</label>
+     <input type="number" id="n2">
+
+     <p id="total"></p>
+     <p class="pone">Hello World</p>
+
+     <button onclick="addittion()">add</button>
+
+     <script>
+         var p = document.createTextNode("This is a string using DOM.");
+document.getElementById("pone").innerHTML = p;
+
+function addittion() {
+    let num1 = document.getElementById("n1").nodeValue
+    let num1 = document.getElementById("n2").nodeValue
+
+    document.getElementById("total").innerHTML = +num1 + +num2
+}
+
+
+// the dom methods
+// the creating, removing of elements. The creating of text node and appending child elements to parent elements
+// the dom events
+
+
+     </script>
+</body>
+</html>
