@@ -6,35 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-
+<!-- 
     <input id="order" type="text">
 
-    <input type="submit" onclick="food()">
+    <input type="submit" onclick="food()"> -->
+    
 
-    <p id="output"></p>
+    <!-- <p id="output"></p> -->
     <script>
+        var order = prompt("Enter Order:");
         var menu_items =["pizza", "coffee", "milshake", "french_fries"];
-        var orderinput = document.getElementById('order').Value;
-        alert(orderinput);
+        // var orderinput = document.getElementById('order').Value;
+        // alert(orderinput);
 
 function food() {
 
-        switch(orderinput) {
-            case  'pizza':{
+        switch(order) {
+            case 'pizza':{
                 document.write("pizza is selected");
                 document.getElementById("output").innerHTML = "pizza";
                 console.log("pizza");
             }break;
 
-            case "coffe" : {
+            case 'coffe' : {
                 document.write("cofee is selected");
                 console.log("coffee");
             }break;
-            case "milkshake" : {
+            case 'milkshake' : {
                 document.write("milkshake is selected");
             }break;
 
-            case "french_fries" : {
+            case 'french_fries' : {
                 document.write("french fries is selected");
             }break;
 

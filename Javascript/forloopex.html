@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- basic for loop 
+    syntax - for (initialization of variable, condition, increment/decrement){
+
+    }
+
+    for-in loop 
+    syntax - for (variable-name in object-name)
+
+    for-of loop 
+    syntax - for (variable-name of iterable object) -->
+
+
+    <script>
+        for(let i=0; i<3; i++){
+            console.log(i);
+            
+        }
+
+        var student = {name:"Sanket",
+                        city:"pune",
+                        tech:"java"};
+                        var x;
+                        var text ="";
+                        
+
+                        // for (x in student){
+                        //      text = student[x];
+                        //     console.log(text);
+                        // }
+
+
+                        for (x in student){
+                            text=student[x];
+                            console.log(text);
+                        }
+
+
+
+                        // for-of loop
+                        // syntax - for (variable-name of iterable){
+                            
+                        // }
+
+
+                        var students = ["sanket", "siddhi", "swati", "omkar", "vaibhav"];
+                        var j;
+                        var k;
+
+                        for (j of students){
+                            console.log(j);
+                        }
+
+                        for (k in students){
+                            console.log(k);
+                        }
+
+
+                        // for-in - It loops through the properties of an Object
+                        //         It loops through the array elements through index values
+
+                        //         for -of - It loops through over the iterable Object
+
+
+                        students.forEach(functionprint);
+
+
+                        function functionprint(item, index){
+                          //  document.writeln("student" + item);
+                            console.log("student" + index + item);
+                        }
+
+
+                        function add(x, ...y){
+                            var a
+                            add = a+b;
+                        }
+
+                        add(40, 50, 60, 70)
+                        
+    </script>
+
+</body>
+</html>
