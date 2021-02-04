@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="pone">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur mollitia
+      suscipit nihil facere, dolor recusandae aspernatur molestias ratione,
+      distinctio aut sapiente impedit! Accusamus maxime neque et numquam ipsum
+      voluptates quos!
+    </p>
+
+    <p id="ptwo"></p>
+
+    <p id="pthree"></p>
+    <button id="btn" onclick="show()">submit</button>
+
+    <script>
+        function show() {
+            document.getElementById("pone").innerHTML ="hi"
+        }
+
+        document.getElementById("btn").addEventListener("click", function () {
+            document.getElementById("pone").innerHTML = "hello"
+        })
+        document.getElementById("btn").addEventListener("click",function () {
+            document.getElementById("ptwo").innerHTML = "hello world"
+        })
+        document.getElementById("btn").addEventListener("", function () {
+            document.getElementById("pthree").innerHTML = "mouse over event"
+
+
+        })
+    </script>
+  </body>
+</html>

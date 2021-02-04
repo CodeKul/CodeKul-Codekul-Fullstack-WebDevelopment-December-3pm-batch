@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating and appending element</title>
+</head>
+<body>
+    <h1>Create Table dynamically</h1>
+    <button onclick="showTable()">Generate Table</button>
+    <p id="table"></p>
+
+    <script>
+        function GenerateTable() {
+            let table = document.createElement("table");
+            document.writeln(table)
+            console.log(table);
+            let row1 = document.createElement("tr");
+            console.log(row1);
+            table.appendChild(row1);
+            let row2 = document.createElement("tr");
+            table.appendChild(row2);
+            let row3 = document.createElement("tr");
+            table.appendChild(row3);
+            let cell1 = document.createElement("td");
+            row1.appendChild(cell1);
+            let cell2 = document.createElement("td");
+            row1.appendChild(cell2);
+
+            let cell3 = document.createElement("td");
+            row2.appendChild(cell3);
+            let cell4 = document.createElement("td");
+            row2.appendChild(cell4);
+
+            let cell5 = document.createElement("td");
+            row3.appendChild(cell5);
+            let cell6 = document.createElement("td");
+            row3.appendChild(cell6);
+            cell2.innerText="Address";
+            cell1.innerText="Technology Stack"
+
+            cell3.innerText="Java";
+            cell4.innerText="Banglore"
+
+            cell5.innerText="React";
+            cell6.innerText="Delhi";
+            
+
+            
+
+            
+        }
+
+        function showTable(){
+            GenerateTable();
+        }
+    </script>
+</body>
+</html>

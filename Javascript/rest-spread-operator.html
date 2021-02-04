@@ -10,29 +10,35 @@
         //rest operatior is used at the function declaration and spread operator at the arguments passing or function call
         //Always write the rest parameter in the end.
         // parameters are variables that are passed or listed while function declaration
-        function add(x,...z) {
+        function add(...z) {
             var i;
             var result;
-            for(i=0; i<=z.length; i++){
-                 x+= z[i];
-            }
-            console.log(x);
+            // for(i=0; i<=z.length; i++){
+            //      x+= z[i];
+            // }
+            // console.log(x);
+            // console.log(y);
             console.log(z);
-            console.log(z[3])
+            console.log(z[3]);
             console.log(z.length)
             console.log(arguments);
+            // console.log(x+y);
             
                   
         }
+
 
        // add(12,5);  //function arguments are the values that passed while function call
 
         add(12,5,6,10,20,30,50);
 
+
         var names = ["sanket", "rushi", "siddhi","vaishnavi", "vaibhav"];
         var updatedNames = ["omkar", ...names];
+        var students = ["student1", "student2", "student3", "student4"];
 
         add(...names);
+        add(...students);
 
 
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td, div{
+            border: black 2px solid;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer-parent">
+        
+    <div id="outer">
+        <div id="inner">click here</div>
+    </div>
+
+</div>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Task</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Complete HTML Basics</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Complete HTML Basics</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Complete HTML Basics</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Complete HTML Basics</td>
+        </tr>
+    </table>
+    <script>
+
+        document.getElementById("inner").addEventListener('click', function(){
+            console.log("Inner Div");
+
+        })
+
+        document.getElementById("outer").addEventListener('click', function(){
+            console.log("outer div");
+        })
+            
+        
+
+    </script>
+</body>
+</html>

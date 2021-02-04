@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click here</button>
+    <ul id="fruits">
+        <li>apple</li>
+        <li>lemon</li>
+        <li>strawberry</li>
+    </ul>
+
+    <script>
+        document.getElementById("fruits").addEventListener('click', function(e){
+            document.write(e.target.innerHTML + " is clicked")
+        })
+
+        document.getElementById("btn").addEventListener('mouseover', function (e){
+            document.write(e.target.innerHTML + "button is clicked")
+        })
+    </script>
+</body>
+</html>
