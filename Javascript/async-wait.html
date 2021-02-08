@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- call back hell "The Pyramid Of Doom" -->
+
+    <script>
+        // var verifyUser = function (username, password, callback) {
+        //     dataBase.verifyUser(username, password, (error, userInfo) => {
+        //         if(error) {
+        //             callback(error)
+        //         }else {
+        //             dataBase.getRoles(username, (error, roles) => {
+        //                 if(error) {
+        //                     callback(error)
+        //                 } else {
+        //                     dataBase.logAccess(username, (error) => {
+        //                         if (error) {
+        //                             callback(error);
+        //                         }
+        //                         else {
+        //                             callback(null, userInfo, roles);
+        //                         }
+        //                     }) 
+        //                 }
+        //             })
+        //         }
+        //     })
+        // }
+
+
+
+        // const verifyUser = function (username, password){
+        //     dataBase.verifyUser(username, password)
+        //     .then(userInfo => 
+        //     dataBase.getRoles(userInfo))
+        //     .then (rolesInfo => dataBase.logAccess(rolesInfo))
+        //     .then(finalResult => {
+        //         callback(username, userInfo, error)
+        //     })
+
+        //     .catch(error => {
+        //         callback(error)
+        //     })
+        // }
+
+
+        // const getRoles = function (username) {
+        //     return new Promise ((resolve, reject) => {
+        //         dataBase.connect((connection) => connection.query('get roles sql', (result) => {
+        //             resolve(result)
+        //             .catch(reject);
+        //         } ))
+        //     })
+        // }
+
+
+        const verifyUser = async 
+        function displayInfo (username, password){
+            try{
+                const userInfo = await 
+                dataBase.verifyUser(username, password);
+                const rolesInfo = await 
+                dataBase.getRoles(userInfo);
+
+                const logStatus = await 
+                dataBase.logAccess(userInfo)
+                return userInfo;
+            }
+
+            catch (e) {
+                callback(error)
+            }
+        };
+    </script>
+
+</body>
+</html>
