@@ -6,6 +6,32 @@
     <title>Document</title>
 </head>
 <body>
+
+    <p id="display"></p>
     
+    <!-- function call back - we can pass function as a parameter in other function -->
+
+    <script>
+        function show1(){
+            var dt = new Date();
+            // document.getElementById("display").innerText = "Hello World"
+            document.getElementById("display").innerHTML = 
+             dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds()
+
+        }
+
+        // setTimeout(show, 5000);
+
+        // setInterval(show, 2000);
+
+        function show2(){
+            document.getElementById("display").innerHTML = "hello"
+            
+
+        }
+
+        // setInterval(show1, 2000);
+        setTimeout(show2, 2000);
+    </script>
 </body>
 </html>
