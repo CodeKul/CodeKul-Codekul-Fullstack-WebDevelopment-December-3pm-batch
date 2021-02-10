@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x, y){
+            var total = x+y;
+            console.log(x+y);
+        }
+
+        function display (x, y, add){
+            console.log(x);
+        }
+
+
+        display(10, 20 , add(10,20))
+
+
+        const verifyUser = function (username, password) {
+            dataBase.verifyUser(username, password)
+.then((result) => {dataBase.getRoles(userInfo) 
+    .then(rolesInfo => 
+    dataBase.logAccess(rolesInfo))
+    .then(finalResult => {
+        verifyUser();
+    })
+    
+}).catch((err) => {
+    console.log("Invalid User")
+});
+        }
+       
+        const getRoles = function(username) {
+            return new Promise((resolve, reject) => {
+                dataBase.connect((connection) => {
+                    connection.query('get roles sql', (result) => {
+                        resolve(result);
+                    })
+                })
+            })
+        }
+
+
+        const verifyUser = async function displayData (username, password){
+                dataBase.verifyUser(username, password);
+                const rolesInfo = await dataBase.getRoles(userInfo);
+                const logStatus = await dataBase.logAccess(userInfo);
+
+                return userInfo;
+
+                const display = await displayData(username, password)
+        }
+
+    </script>
+</body>
+</html>

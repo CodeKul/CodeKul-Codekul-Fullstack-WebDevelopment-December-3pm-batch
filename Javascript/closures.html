@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// when you create a function within another function, you have created a closure
+// The inner function is a closure
+
+// This closure is usually returned so you can use the outer function's variables at a later time
+
+        // function outer() {
+        //     var outer = 10;
+        //     function inner () {
+        //        console.log(outer)
+        //     }
+        //     inner();
+        // }
+
+        // outer();
+
+
+        // important characteristic of closure is that the outer variables can keep their states between multiple calls 
+        //  inner function does not keep separate copy of outer variables. 
+        // that means value of outer variables will be changed if you change it using inner function
+
+        // function outer () {
+        //     var outer = 100;
+        //     function inner() {
+        //         alert(outer);
+        //     }
+
+        //     return inner;
+        // }
+
+        // var innerf = outer();
+        // innerf();
+        var counter = 0; 
+        
+        function counterf() {
+            
+            function IncreaseCounter () {
+                return counter=counter +1;
+            }
+
+            return IncreaseCounter();
+
+        }
+
+        var counter = counterf();
+
+        alert(counterf());
+        alert(counterf());
+       
+
+        // closures scope chain 
+        // global scope 
+        // local scope  
+        // block/function scope 
+
+        // how to get form data by using dom methods.
+        //fetch, api, stringify, json, axios
+
+
+    </script>
+</body>
+</html>
