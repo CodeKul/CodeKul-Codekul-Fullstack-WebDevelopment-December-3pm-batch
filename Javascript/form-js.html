@@ -18,7 +18,7 @@
     <form>
         <div>
         <label>FirstName</label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname" name="firstname">
         </div>
         <div>
         <label>LastName</label>
@@ -56,12 +56,17 @@
             var lastName = document.getElementById("lastname").value
             var city = document.getElementById("city").value
             var gender = document.getElementsByName("gender")
+
+           
         //    if(gender[0].checked){
         //        var genderValue = gender[0].value
         //    }else{
         //        var gendervalue =gender[1].value
         //    }
         //    console.log(genderValue)
+
+        // To get the values selected or checked for a radio button 
+        // we use for loop
 
         for(let i =0;i<gender.length;i++){
             if(gender[i].checked){
@@ -90,7 +95,21 @@
         console.log(formData)
        document.write(formData.firstName)
 
-    }    
+    //    syntax for JSON.stringify 
+    //    JSON.stringify({})
+
+
+    var stringJ = JSON.stringify({firstName:firstName,
+            lastName:lastName,
+            city:city,
+            gender:genderValue,
+            active:activeStatus})
+       console.log(stringJ);
+
+    }  
+    
+    
+    console.log(JSON.parse("firstName","lastName", "city, gender, asctive"))
     </script>
 </body>
 </html>

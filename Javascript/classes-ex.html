@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a;      //declaration
+        //  a = 10;     //initialized/define
+
+        //  console.log(40-a);         //call/use
+
+
+        // defining a variable or function  
+        // and then using statements to call a function or use a variable
+        // a=5;
+        //  console.log(30+a);
+
+         
+
+        //  var a;
+
+
+         class Person {
+             constructor (personName,id){
+                 this.personName = personName;
+                 this.id=id;
+             }
+
+             getInfo1() {
+                 console.log(this.personName, this.id)
+             }
+
+         }
+
+
+         class Data extends Person{
+            constructor(personName,id){
+                //  this.personName = personName;
+                //  this.id=id;
+                
+             }
+
+             getInfo() {
+                 console.log(this.personName,this.id)
+             }
+            
+         }
+
+         let p1 = new Person("Siddhi", 123);
+
+         let p2 = new Data("Omkar", 1235)
+        //  let person = new Person();
+         p1.getInfo1();
+         
+    </script>
+</body>
+</html>

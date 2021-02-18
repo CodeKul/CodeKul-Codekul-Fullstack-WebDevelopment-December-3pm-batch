@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form onsubmit="userValues()">
+
+        <label for="id"></label>
+        <input id="id" type="text">
+
+        <label for="title">Title</label>
+        <input id="title" type="text">
+
+        <label for="userId">User Id</label>
+        <input id="userId" type="text">
+
+        <label for="body">Body</label>
+        <input id="body" type="text">
+
+
+        <input type="submit" >
+
+
+    </form>
+
+
+
+    <script>
+
+function userValues() {
+    var userId = document.getElementById("userId").value;
+    var id = document.getElementById("id").value;
+    var title = document.getElementById("title").value;
+    var body = document.getElementById("body").value;
+
+    let userData = JSON.stringify({
+        userId:userId,
+        id:id,
+        title:title,
+        body:body,
+    });
+
+    console.log(userData)
+    return(userData);
+
+}
+
+    </script>
+</body>
+</html>
