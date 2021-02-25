@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Input {
+            constructor (name, id, address) {
+                this.id = id;
+                this.name = name;
+                this.address = address;
+              
+            }
+
+            displayData() {
+                console.log(this.id, this.name);
+                console.log(this.address);
+            }
+
+            
+        }
+
+
+        class Input2 extends Input {
+            constructor (name2, id2, address) {
+
+               
+                this.id2 = id2;
+                this.name2 = name2;
+                super (name, id);
+                this.address = address;
+
+
+            
+            }
+
+            // displayData() {
+            //     console.log(this.id2, this.name2);
+                
+            // }
+            
+            
+        }
+
+        // object name = new constructor name (arguments, arguments);
+        p1 = new Input("siddhi", 123);
+
+
+// Classes doesn't get declared at top.
+// Hoisting is not applied to classes.
+
+       
+        p2 = new Input2("vaibhav", 321, "pune");
+        p2.displayData();        
+        // p1.displayData();
+
+
+    </script>
+</body>
+</html>

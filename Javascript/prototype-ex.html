@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employees {
+            constructor (){
+            var employee;
+        }
+        }
+
+        // let employee = {};
+        //     employee.name = "Rushi";
+        //     employee.age = 25;
+
+        //     employee.department = "Backend";
+
+        //     employe.session = function () {
+        //         console.log("Session on Backend");
+        //     }
+
+
+            function employee (name, age, tech) {
+                let employee = {};
+                employee.name = name;
+                employee.age = age;
+                employee.tech = tech;
+
+                // employee.session = function () {
+                //     console.log("Session on" + employee.tech);
+                // }
+
+                console.log(employee.name, employee.age, employee.tech)
+                return employee;
+            }
+
+
+            const employee1 = employee("Siddhi", 24, "Java"); 
+
+
+            // Prototype is a property. Whenever we create any function prototype object is created.
+
+            // This protype object has the constructor property by default
+
+
+
+            // syntax for prototype 
+
+            // functionName.prototype
+
+            // We can gain access the function object back by functionName.prototype.constructor
+
+            function Employee (name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            console.log(Employee.prototype);
+
+            
+        
+    </script>
+</body>
+</html>
