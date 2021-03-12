@@ -26,12 +26,31 @@ nav ul li{
 }
 
 
-img{
+.toplist img{
     height: 70px;
     width: 120px;
 }
 
 .toplist{
-    height: 90px;
+    height: 80px;
     display: flex;
+}
+
+.carousel img{
+    height: 300px;
+    width: 100%;
+}
+
+.carousel{
+    margin-top: 40px;
+}
+
+.carousel i{
+    color: blue;
+    font-size:xx-large;
+}
+
+.carousel-caption {
+    color: blue;
+    background-color: cadetblue;
 }
